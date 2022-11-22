@@ -32,7 +32,7 @@ export type ImageProps = AccessibilityProps & {
   /**
    * The image source (either a remote URL or a local file resource).
    */
-  source?: ImageSource | number;
+  source?: ImageSource | number | string;
   /**
    * A static image to display while loading the image source.
    * @platform android

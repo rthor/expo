@@ -56,6 +56,17 @@ public final class ImageModule: Module {
     Function("clearDiskCache") {
       SDImageCache.shared.clearDisk()
     }
+
+    AsyncFunction("encodeBlurHashAsync") { (uri: URL, x: Int, y: Int, promise: Promise) in
+      SDWebImageManager.shared.loadImage(with: uri, progress: nil) { (image, data, error, cacheType, finished, imageUrl) in
+        if let image = image {
+          let blurHash = blurHash(fromImage: image, numberOfComponents: (x, y))
+          promise.resolve(blurHash)
+        } else {
+          promise.reject("", "")
+        }
+      }
+    }
   }
 
   static func registerCoders() {
