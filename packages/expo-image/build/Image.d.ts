@@ -14,6 +14,16 @@ export declare class Image extends React.Component<ImageProps, ImageState> {
      * @return an empty promise.
      */
     static prefetch(url: string): Promise<void>;
+    /**
+     * Clear all images from the memory cache.
+     * @returns An empty promise.
+     */
+    static clearMemoryCache(): Promise<void>;
+    /**
+     * Asynchronously clear all images from the disk cache. Non-blocking method - returns immediately.
+     * @returns A promise resolving to `true` when the clear operation succeeded, otherwise `false`.
+     */
+    static clearDiskCache(): Promise<boolean>;
     state: {
         onLoad: undefined;
         onError: undefined;

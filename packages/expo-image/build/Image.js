@@ -34,6 +34,20 @@ export class Image extends React.Component {
         }
         return await ExpoImageModule.prefetch(url);
     }
+    /**
+     * Clear all images from the memory cache.
+     * @returns An empty promise.
+     */
+    static async clearMemoryCache() {
+        return ExpoImageModule.clearMemoryCache();
+    }
+    /**
+     * Asynchronously clear all images from the disk cache. Non-blocking method - returns immediately.
+     * @returns A promise resolving to `true` when the clear operation succeeded, otherwise `false`.
+     */
+    static async clearDiskCache() {
+        return ExpoImageModule.clearDiskCache();
+    }
     state = {
         onLoad: undefined,
         onError: undefined,

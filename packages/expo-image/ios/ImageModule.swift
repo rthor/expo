@@ -49,12 +49,24 @@ public final class ImageModule: Module {
       }
     }
 
-    Function("clearMemoryCache") {
+    AsyncFunction("clearMemoryCache") {
       SDImageCache.shared.clearMemory()
     }
 
-    Function("clearDiskCache") {
-      SDImageCache.shared.clearDisk()
+    AsyncFunction("clearDiskCache") { (promise: Promise) in
+      SDImageCache.shared.clearDisk {
+        promise.resolve(true)
+      }
+    }
+
+    AsyncFunction("getDiskCacheInfo") { (promise: Promise) in
+      SDImageCache.shared.calculateSize { fileCount, totalSize in
+        promise.resolve([
+          "fileCount": fileCount,
+          "totalSize": totalSize,
+          "path": SDImageCache.shared.diskCachePath,
+        ])
+      }
     }
   }
 
