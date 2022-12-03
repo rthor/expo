@@ -79,7 +79,7 @@ const Home = () => {
                 css={[
                   baseGradientStyle,
                   css({
-                    background: `linear-gradient(${background.secondary} 15%, #21262d00 100%)`,
+                    background: `linear-gradient(${background.subtle} 15%, #21262d00 100%)`,
                   }),
                 ]}
               />
@@ -105,19 +105,19 @@ const Home = () => {
               css={[
                 tutorialCellStyle,
                 css({
-                  borderColor: palette.primary[themeName === 'dark' ? '300' : '200'],
+                  borderColor: palette.blue7,
                 }),
               ]}>
               <div
                 css={[
                   baseGradientStyle,
                   css({
-                    background: `linear-gradient(${palette.primary['100']} 15%, #201d5200 100%)`,
+                    background: `linear-gradient(${palette.blue4} 15%, #201d5200 100%)`,
                   }),
                 ]}
               />
               <DevicesImage />
-              <H2 css={css({ color: palette.primary['900'], zIndex: 1, position: 'relative' })}>
+              <H2 css={css({ color: palette.blue12, zIndex: 1, position: 'relative' })}>
                 Create a universal Android, iOS,
                 <br />
                 and web app
@@ -125,11 +125,11 @@ const Home = () => {
               <HomeButton
                 css={css({
                   background: button.primary.background,
-                  color: button.primary.foreground,
+                  color: button.primary.text,
                   height: 40,
                 })}
                 href="/tutorial/introduction/"
-                iconRight={<ArrowRightIcon color={button.primary.foreground} />}>
+                iconRight={<ArrowRightIcon color={button.primary.icon} />}>
                 Start Tutorial
               </HomeButton>
             </GridCell>
@@ -145,23 +145,23 @@ const Home = () => {
               xl={6}
               lg={6}
               css={css({
-                backgroundColor: palette.blue['000'],
-                borderColor: palette.blue['200'],
+                backgroundColor: palette.blue2,
+                borderColor: palette.blue5,
               })}>
               <SnackImage />
-              <H3 css={css({ color: palette.blue['900'], marginBottom: spacing[1.5] })}>
+              <H3 css={css({ color: palette.blue12, marginBottom: spacing[1.5] })}>
                 Try Expo in your browser
               </H3>
-              <P css={css({ color: palette.blue['800'], ...typography.fontSizes[14] })}>
+              <P css={css({ color: palette.blue12, ...typography.fontSizes[14] })}>
                 Expo’s Snack lets you try Expo
                 <br />
                 with zero local setup.
               </P>
               <HomeButton
-                css={css({ backgroundColor: palette.blue['500'], color: palette.blue['100'] })}
+                css={css({ backgroundColor: palette.blue10, color: palette.blue4 })}
                 href="https://snack.expo.dev/"
                 target="_blank"
-                iconRight={<ArrowUpRightIcon color={palette.blue['100']} />}>
+                iconRight={<ArrowUpRightIcon color={palette.blue4} />}>
                 Create a Snack
               </HomeButton>
             </GridCell>
@@ -169,23 +169,23 @@ const Home = () => {
               xl={6}
               lg={6}
               css={css({
-                backgroundColor: palette.orange['100'],
-                borderColor: palette.orange[themeName === 'dark' ? '300' : '200'],
+                backgroundColor: palette.orange4,
+                borderColor: palette.orange7,
               })}>
               <CodecademyImage />
-              <H3 css={css({ color: palette.orange['900'] })}>
+              <H3 css={css({ color: palette.orange12 })}>
                 Learn Expo on
                 <br />
                 Codecademy
               </H3>
               <HomeButton
                 css={css({
-                  backgroundColor: palette.orange['800'],
-                  color: palette.orange['100'],
+                  backgroundColor: palette.orange12,
+                  color: palette.orange4,
                 })}
                 href="https://www.codecademy.com/learn/learn-react-native"
                 target="_blank"
-                iconRight={<ArrowUpRightIcon color={palette.orange['100']} />}>
+                iconRight={<ArrowUpRightIcon color={palette.orange4} />}>
                 Start Course
               </HomeButton>
             </GridCell>
@@ -193,22 +193,22 @@ const Home = () => {
               xl={6}
               lg={6}
               css={css({
-                backgroundColor: palette.green['000'],
-                borderColor: palette.green['200'],
+                backgroundColor: palette.green2,
+                borderColor: palette.green5,
               })}>
               <WhyImage />
-              <H3 css={css({ color: palette.green['900'], marginBottom: spacing[1.5] })}>
+              <H3 css={css({ color: palette.green12, marginBottom: spacing[1.5] })}>
                 Why choose Expo?
               </H3>
-              <P css={{ color: palette.green['800'], ...typography.fontSizes[14] }}>
+              <P css={{ color: palette.green12, ...typography.fontSizes[14] }}>
                 Learn the tradeoffs of
                 <br />
                 using Expo.
               </P>
               <HomeButton
-                css={css({ backgroundColor: palette.green['700'], color: palette.green['000'] })}
+                css={css({ backgroundColor: palette.green11, color: palette.green2 })}
                 href="/introduction/faq"
-                iconRight={<ArrowRightIcon color={palette.green['000']} />}>
+                iconRight={<ArrowRightIcon color={palette.green2} />}>
                 Read
               </HomeButton>
             </GridCell>
@@ -216,26 +216,26 @@ const Home = () => {
               xl={6}
               lg={6}
               css={css({
-                backgroundColor: palette.yellow['000'],
-                borderColor: palette.yellow['300'],
+                backgroundColor: palette.yellow2,
+                borderColor: palette.yellow7,
               })}>
               <OfficeHoursImage />
-              <H3 css={css({ color: palette.yellow['900'], marginBottom: spacing[1.5] })}>
+              <H3 css={css({ color: palette.yellow12, marginBottom: spacing[1.5] })}>
                 Join us for Office Hours
               </H3>
-              <P css={css({ color: palette.yellow['800'], ...typography.fontSizes[14] })}>
+              <P css={css({ color: palette.yellow12, ...typography.fontSizes[14] })}>
                 Get answers to your questions and
                 <br />
                 get advice from the Expo team.
               </P>
               <HomeButton
                 css={css({
-                  backgroundColor: palette.yellow['900'],
-                  color: palette.yellow['000'],
+                  backgroundColor: palette.yellow12,
+                  color: palette.yellow2,
                 })}
                 href="https://us02web.zoom.us/meeting/register/tZcvceivqj0oHdGVOjEeKY0dRxCRPb0HzaAK"
                 target="_blank"
-                iconRight={<ArrowUpRightIcon color={palette.yellow['000']} />}>
+                iconRight={<ArrowUpRightIcon color={palette.yellow2} />}>
                 Register
               </HomeButton>
             </GridCell>
@@ -288,13 +288,13 @@ export function JoinTheCommunity() {
             title="GitHub"
             description="View our SDK, submit a PR, or report an issue."
             link="https://github.com/expo/expo"
-            icon={<GithubIcon color={palette.white} size={iconSize.large} />}
+            icon={<GithubIcon color={palette.white} size={iconSize.lg} />}
           />
           <CommunityGridCell
             title="Discord"
             description="Join our Discord and chat with other Expo users."
             link="https://chat.expo.dev"
-            icon={<DiscordIcon color={palette.white} size={iconSize.large} />}
+            icon={<DiscordIcon color={palette.white} size={iconSize.lg} />}
             iconBackground="#3131E8"
           />
         </Row>
@@ -303,14 +303,14 @@ export function JoinTheCommunity() {
             title="Twitter"
             description="Follow Expo on Twitter for news and updates."
             link="https://twitter.com/expo"
-            icon={<TwitterIcon color={palette.white} size={iconSize.large} />}
+            icon={<TwitterIcon color={palette.white} size={iconSize.lg} />}
             iconBackground="#1E8EF0"
           />
           <CommunityGridCell
             title="Forums"
             description="Ask or answer a question on the forums."
             link="https://forums.expo.dev/"
-            icon={<DiscourseIcon color={palette.white} size={iconSize.large} />}
+            icon={<DiscourseIcon color={palette.white} size={iconSize.lg} />}
           />
         </Row>
         <Row>
@@ -318,7 +318,7 @@ export function JoinTheCommunity() {
             title="Reddit"
             description="Get the latest on r/expo."
             link="https://www.reddit.com/r/expo"
-            icon={<RedditIcon color={palette.white} size={iconSize.large} />}
+            icon={<RedditIcon color={palette.white} size={iconSize.lg} />}
             iconBackground="#FC471E"
           />
         </Row>
@@ -337,7 +337,7 @@ const baseGradientStyle = css({
 });
 
 const quickStartCellStyle = css({
-  backgroundColor: theme.background.secondary,
+  backgroundColor: theme.background.subtle,
   backgroundImage: 'url("/static/images/home/QuickStartPattern.svg")',
   backgroundBlendMode: 'multiply',
   minHeight: 250,
@@ -348,7 +348,7 @@ const quickStartCellStyle = css({
 });
 
 const tutorialCellStyle = css({
-  backgroundColor: theme.palette.primary['100'],
+  backgroundColor: theme.palette.blue4,
   backgroundImage: 'url("/static/images/home/TutorialPattern.svg")',
   backgroundBlendMode: 'multiply',
   minHeight: 250,

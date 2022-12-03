@@ -2,7 +2,7 @@ import { iconSize } from '@expo/styleguide';
 import { IconProps } from '@expo/styleguide/dist/types';
 import React from 'react';
 
-export const DocumentationIcon = ({ size = iconSize.regular, className }: IconProps) => {
+export const DocumentationIcon = ({ size = iconSize.md, className }: IconProps) => {
   return (
     <svg
       width={size}
@@ -39,7 +39,7 @@ export const DocumentationIcon = ({ size = iconSize.regular, className }: IconPr
   );
 };
 
-export const DocumentationInactiveIcon = ({ size = iconSize.regular, className }: IconProps) => {
+export const DocumentationInactiveIcon = ({ size = iconSize.md, className }: IconProps) => {
   return (
     <svg
       width={size}

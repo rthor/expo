@@ -17,7 +17,7 @@ const STYLES_LINK = css`
   grid-template-columns: 20px auto;
   text-align: left;
   grid-gap: 8px;
-  color: ${theme.link.default};
+  color: ${theme.text.link};
 `;
 
 const platforms = [
@@ -41,7 +41,7 @@ function getInfo(isSupported: IsSupported, { title }: Platform) {
     return {
       children: (
         <A css={STYLES_LINK} href={isSupported.pending}>
-          <StatusWaitingIcon color={theme.status.info} /> Pending
+          <StatusWaitingIcon color={theme.icon.info} /> Pending
         </A>
       ),
       title: `${title} support is pending`,

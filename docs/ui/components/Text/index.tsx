@@ -78,7 +78,7 @@ export const kbdStyle = css({
   color: theme.text.secondary,
   padding: `0 ${spacing[1]}px`,
   boxShadow: `0 0.1rem 0 1px ${theme.border.default}`,
-  borderRadius: borderRadius.small,
+  borderRadius: borderRadius.sm,
   position: 'relative',
   display: 'inline-flex',
   margin: 0,

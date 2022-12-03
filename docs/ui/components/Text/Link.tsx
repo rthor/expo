@@ -52,6 +52,6 @@ const linkStyle = css({
     opacity: 0.8,
   },
   ':visited': {
-    color: theme.link.default,
+    color: theme.text.link,
   },
 });

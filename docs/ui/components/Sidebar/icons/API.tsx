@@ -1,7 +1,7 @@
 import { iconSize } from '@expo/styleguide';
 import { IconProps } from '@expo/styleguide/dist/types';
 
-export const APIIcon = ({ size = iconSize.regular, className }: IconProps) => {
+export const APIIcon = ({ size = iconSize.md, className }: IconProps) => {
   return (
     <svg
       width={size}
@@ -72,7 +72,7 @@ export const APIIcon = ({ size = iconSize.regular, className }: IconProps) => {
   );
 };
 
-export const APIInactiveIcon = ({ size = iconSize.regular, className }: IconProps) => {
+export const APIInactiveIcon = ({ size = iconSize.md, className }: IconProps) => {
   return (
     <svg
       width={size}

@@ -34,7 +34,7 @@ export function Navigation({ routes }: NavigationProps) {
 const navigationStyle = css({
   width: 280,
   height: '100%',
-  backgroundColor: theme.background.secondary,
+  backgroundColor: theme.background.subtle,
   '[data-expo-theme="dark"] &': {
     backgroundColor: theme.background.default,
   },

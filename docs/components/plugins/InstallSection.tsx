@@ -18,14 +18,14 @@ const STYLES_BOLD = css`
   font-family: ${typography.fontFaces.medium};
   font-weight: 400;
   text-decoration: none;
-  color: ${theme.link.default};
+  color: ${theme.text.link};
   :hover {
     text-decoration: underline;
   }
 `;
 const STYLES_LINK = css`
   text-decoration: none;
-  color: ${theme.link.default};
+  color: ${theme.text.link};
   :hover {
     text-decoration: underline;
   }

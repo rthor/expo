@@ -10,11 +10,11 @@ export const DevicesImage = () => (
       bottom: 0;
       max-width: 60%;
       z-index: 1;
-      
+
       @media screen and (max-width: ${breakpoints.medium}px) {
         bottom: -16px;
       }
-      
+
       @media screen and (max-width: ${breakpoints.small}px) {
         bottom: -32px;
       }
@@ -32,7 +32,7 @@ export const DevicesImage = () => (
         height="188"
         rx="4"
         transform="rotate(13 214.901 22.3787)"
-        fill={darkTheme.background.tertiary}
+        fill={darkTheme.background.element}
       />
       <rect
         x="211.247"
@@ -178,7 +178,7 @@ export const DevicesImage = () => (
       height="179.702"
       rx="6.39994"
       transform="rotate(-13 18.0653 47.8184)"
-      stroke={darkTheme.background.tertiary}
+      stroke={darkTheme.background.element}
       strokeWidth="7.11105"
     />
     <rect
@@ -282,7 +282,7 @@ export const DevicesImage = () => (
       width="81.8428"
       height="179.702"
       rx="6.39994"
-      stroke={darkTheme.background.tertiary}
+      stroke={darkTheme.background.element}
       strokeWidth="7.11105"
     />
     <rect x="125.523" y="33.6431" width="65.4637" height="41.3883" rx="3.31849" fill="white" />
@@ -342,7 +342,7 @@ export const DevicesImage = () => (
     </g>
     <path
       d="M134.302 13.9601C134.856 13.6266 135.491 13.4504 136.139 13.4504H180.206C180.899 13.4504 181.576 13.6521 182.156 14.0309L185.142 15.9811C187.227 17.343 186.263 20.5831 183.773 20.5831C182.389 20.5831 181.268 21.7046 181.268 23.088V24.1495C181.268 26.1191 179.671 27.7158 177.701 27.7158H138.716C136.746 27.7158 135.149 26.1191 135.149 24.1495V23.1602C135.149 21.7369 133.996 20.5831 132.572 20.5831C129.96 20.5831 129.005 17.1432 131.245 15.7973L134.302 13.9601Z"
-      fill={darkTheme.background.tertiary}
+      fill={darkTheme.background.element}
     />
   </svg>
 );

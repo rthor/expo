@@ -9,7 +9,7 @@ type LinkProps = React.PropsWithChildren<{
 }>;
 
 const STYLES_EXTERNAL_LINK = css`
-  color: ${theme.link.default};
+  color: ${theme.text.link};
   font-size: inherit;
 
   :hover {
@@ -17,7 +17,7 @@ const STYLES_EXTERNAL_LINK = css`
   }
 
   code {
-    color: ${theme.link.default};
+    color: ${theme.text.link};
   }
 `;
 

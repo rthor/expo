@@ -30,8 +30,8 @@ const STYLES_CODE_BLOCK = css`
   .code-annotation {
     transition: 200ms ease all;
     transition-property: text-shadow, opacity;
-    text-shadow: ${theme.highlight.emphasis} 0 0 10px, ${theme.highlight.emphasis} 0 0 10px,
-      ${theme.highlight.emphasis} 0 0 10px, ${theme.highlight.emphasis} 0 0 10px;
+    text-shadow: ${theme.palette.yellow7} 0 0 10px, ${theme.palette.yellow7} 0 0 10px,
+      ${theme.palette.yellow7} 0 0 10px, ${theme.palette.yellow7} 0 0 10px;
   }
 
   .code-annotation.with-tooltip:hover {
@@ -57,9 +57,9 @@ const STYLES_INLINE_CODE = css`
   padding: ${spacing[0.5]}px ${spacing[1]}px;
   max-width: 100%;
   word-wrap: break-word;
-  background-color: ${theme.background.secondary};
+  background-color: ${theme.background.subtle};
   border: 1px solid ${theme.border.default};
-  border-radius: ${borderRadius.small}px;
+  border-radius: ${borderRadius.sm}px;
   vertical-align: middle;
   overflow-x: auto;
 
@@ -80,7 +80,7 @@ const STYLES_CODE_CONTAINER_BLOCK = css`
   border: 1px solid ${theme.border.default};
   padding: 16px;
   margin: 16px 0;
-  background-color: ${theme.background.secondary};
+  background-color: ${theme.background.subtle};
 `;
 
 const STYLES_CODE_CONTAINER = css`
@@ -88,7 +88,7 @@ const STYLES_CODE_CONTAINER = css`
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   line-height: 120%;
-  border-radius: ${borderRadius.small}px;
+  border-radius: ${borderRadius.sm}px;
   padding: ${spacing[4]}px;
 
   table &:last-child {

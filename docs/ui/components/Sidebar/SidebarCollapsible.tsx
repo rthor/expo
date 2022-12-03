@@ -81,7 +81,7 @@ export function SidebarCollapsible(props: Props) {
         {...customDataAttributes}>
         <div css={chevronContainerStyle}>
           <ChevronDownIcon
-            size={iconSize.tiny}
+            size={iconSize.xs}
             css={[chevronStyle, !isOpen && chevronClosedStyle]}
           />
         </div>
@@ -105,8 +105,8 @@ const titleStyle = css({
 
   ':hover': {
     cursor: 'pointer',
-    backgroundColor: theme.background.tertiary,
-    borderRadius: borderRadius.medium,
+    backgroundColor: theme.background.element,
+    borderRadius: borderRadius.md,
     transition: '100ms',
   },
 });
@@ -114,11 +114,11 @@ const titleStyle = css({
 const chevronContainerStyle = css({
   backgroundColor: theme.background.default,
   border: `1px solid ${theme.border.default}`,
-  borderRadius: borderRadius.small,
+  borderRadius: borderRadius.sm,
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  boxShadow: shadows.micro,
+  boxShadow: shadows.xs,
   height: 20,
   width: 20,
   marginRight: spacing[1],

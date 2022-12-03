@@ -76,7 +76,7 @@ export const renderMethod = (
               <LI>
                 <UndoIcon
                   color={theme.icon.secondary}
-                  size={iconSize.small}
+                  size={iconSize.sm}
                   css={returnIconStyles}
                 />
                 <APIDataType typeDefinition={type} />

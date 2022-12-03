@@ -29,7 +29,7 @@ export const PageVote = () => {
               reportPageVote({ status: true });
               setUserVoted(true);
             }}>
-            <ThumbsUpIcon size={iconSize.small} />
+            <ThumbsUpIcon size={iconSize.sm} />
           </Button>
           <Button
             theme="secondary"
@@ -40,7 +40,7 @@ export const PageVote = () => {
               reportPageVote({ status: false });
               setUserVoted(true);
             }}>
-            <ThumbsDownIcon size={iconSize.small} />
+            <ThumbsDownIcon size={iconSize.sm} />
           </Button>
         </div>
       )}
