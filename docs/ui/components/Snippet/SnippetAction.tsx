@@ -46,6 +46,7 @@ const snippetActionStyle = css({
 
 const alwaysDarkStyle = css({
   borderColor: 'transparent',
+  background: 'transparent',
 
   ':hover': {
     borderColor: palette.dark.gray9,

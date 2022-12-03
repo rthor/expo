@@ -74,11 +74,7 @@ export const renderMethod = (
             </div>
             <UL hideBullets>
               <LI>
-                <UndoIcon
-                  color={theme.icon.secondary}
-                  size={iconSize.sm}
-                  css={returnIconStyles}
-                />
+                <UndoIcon color={theme.icon.secondary} size={iconSize.sm} css={returnIconStyles} />
                 <APIDataType typeDefinition={type} />
               </LI>
             </UL>

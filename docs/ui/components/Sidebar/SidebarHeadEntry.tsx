@@ -54,7 +54,7 @@ const activeEntryContainerStyle = css({
   background: theme.background.element,
   borderRadius: borderRadius.md,
 
-  '[data-expo-theme="dark"] &': {
+  '.dark-theme &': {
     backgroundColor: theme.background.element,
   },
 });

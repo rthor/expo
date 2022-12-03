@@ -4,7 +4,6 @@ import {
   spacing,
   theme,
   typography,
-  useTheme,
   ArrowUpRightIcon,
   ArrowRightIcon,
   DiscordIcon,
@@ -52,7 +51,6 @@ const Description = ({ children }: PropsWithChildren<object>) => (
 
 const Home = () => {
   const router = useRouter();
-  const { themeName } = useTheme();
   const { palette, button, background } = theme;
   return (
     <ScreenClassProvider>

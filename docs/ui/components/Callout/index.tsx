@@ -139,7 +139,7 @@ const warningColorStyle = css({
     borderColor: theme.palette.yellow7,
   },
 
-  '[data-expo-theme="dark"] & code': {
+  '.dark-theme & code': {
     backgroundColor: theme.palette.yellow4,
     borderColor: theme.palette.yellow5,
   },
@@ -154,7 +154,7 @@ const errorColorStyle = css({
     borderColor: theme.palette.red5,
   },
 
-  '[data-expo-theme="dark"] & code': {
+  '.dark-theme & code': {
     backgroundColor: theme.palette.red4,
   },
 });
@@ -168,7 +168,7 @@ const infoColorStyle = css({
     borderColor: theme.palette.blue5,
   },
 
-  '[data-expo-theme="dark"] & code': {
+  '.dark-theme & code': {
     backgroundColor: theme.palette.blue4,
   },
 });

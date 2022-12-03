@@ -75,7 +75,7 @@ type CommunityGridCellProps = APIGridCellProps & {
 
 export const CommunityGridCell = ({
   icon,
-  iconBackground =  palette.light.gray11,
+  iconBackground = palette.light.gray11,
   title,
   link,
   description,

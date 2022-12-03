@@ -80,10 +80,7 @@ export function SidebarCollapsible(props: Props) {
         onClick={toggleIsOpen}
         {...customDataAttributes}>
         <div css={chevronContainerStyle}>
-          <ChevronDownIcon
-            size={iconSize.xs}
-            css={[chevronStyle, !isOpen && chevronClosedStyle]}
-          />
+          <ChevronDownIcon size={iconSize.xs} css={[chevronStyle, !isOpen && chevronClosedStyle]} />
         </div>
         <CALLOUT weight="medium">{info.name}</CALLOUT>
       </ButtonBase>

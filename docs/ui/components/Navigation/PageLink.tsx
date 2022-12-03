@@ -32,7 +32,7 @@ const linkStyle = css({
 const linkStyleActive = css({
   boxShadow: shadows.xs,
   backgroundColor: theme.background.default,
-  '[data-expo-theme="dark"] &': {
+  '.dark-theme &': {
     backgroundColor: theme.background.element,
   },
 });

@@ -1,11 +1,12 @@
 import { css } from '@emotion/react';
-import { iconSize, spacing, ThumbsDownIcon, ThumbsUpIcon } from '@expo/styleguide';
+import { iconSize, spacing, theme, ThumbsDownIcon, ThumbsUpIcon } from '@expo/styleguide';
 import { useState } from 'react';
 
 import { Button } from '../Button';
 import { CALLOUT } from '../Text';
 
 import { reportPageVote } from '~/providers/Analytics';
+import { durations } from '~/ui/foundations/durations';
 
 export const PageVote = () => {
   const [userVoted, setUserVoted] = useState(false);
@@ -16,12 +17,12 @@ export const PageVote = () => {
       </CALLOUT>
       {userVoted ? (
         <CALLOUT theme="secondary" css={ratedTextStyle}>
-          Thank you for your vote! 💜
+          Thank you for your vote! 💙
         </CALLOUT>
       ) : (
         <div css={voteButtonsWrapperStyle}>
           <Button
-            theme="secondary"
+            theme="transparent"
             size="mini"
             aria-label="Vote up"
             css={voteButtonStyle}
@@ -61,6 +62,12 @@ const voteButtonStyle = css({
   margin: `${spacing[2.5]}px ${spacing[1]}px 0`,
   minWidth: 42,
   textAlign: 'center',
+  backgroundColor: theme.background.element,
+
+  '&:hover': {
+    transition: durations.hover,
+    backgroundColor: theme.palette.gray5,
+  },
 });
 
 const ratedTextStyle = css({
