@@ -26,12 +26,13 @@ export declare type ImageStyle = RNImageStyle & {
     resizeMode?: ImageResizeMode;
     elevation?: number;
 };
+declare type RequireSource = number | string;
 export declare type ImageProps = AccessibilityProps & {
     style?: ImageStyle;
     /**
      * The image source (either a remote URL or a local file resource).
      */
-    source?: ImageSource | number;
+    source?: ImageSource | RequireSource;
     /**
      * A static image to display while loading the image source.
      * @platform android
@@ -222,4 +223,5 @@ export declare type ImageProgressEventData = {
 export declare type ImageErrorEventData = {
     error: string;
 };
+export {};
 //# sourceMappingURL=Image.types.d.ts.map
